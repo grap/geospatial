@@ -35,8 +35,8 @@ export class MapRenderer extends Component {
         onWillStart(async () =>
             Promise.all([
                 await loadBundle({
-                    jsLibs: ["/web_view_leaflet_map/static/lib/leaflet/leaflet.js"],
-                    cssLibs: ["/web_view_leaflet_map/static/lib/leaflet/leaflet.css"],
+                    jsLibs: ["/web_leaflet_lib/static/lib/leaflet/leaflet.js"],
+                    cssLibs: ["/web_leaflet_lib/static/lib/leaflet/leaflet.css"],
                 }),
             ])
         );

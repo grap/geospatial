@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="view_res_partner_map" model="ir.ui.view">
-        <field name="name">Leaflet Map</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
             <leaflet_map
@@ -20,7 +19,7 @@
     </record>
 
     <record id="contacts.action_contacts" model="ir.actions.act_window">
-        <field name="view_mode">kanban,tree,form,leaflet_map</field>
+        <field name="view_mode">kanban,tree,form,activity,leaflet_map</field>
     </record>
 
     <record id="action_contacts_view_map" model="ir.actions.act_window.view">
@@ -31,3 +30,5 @@
     </record>
 
 </odoo>
+<!-- 
+                <field name="__last_update" /> -->
